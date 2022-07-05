@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Coding classes for kids</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <style>
+    #CodingBanner .content_holder {
+      display: flex;
+      text-align: center;
+      align-items: center;
+    }
+
+    #CodingBanner .description h3 {
+      font-size: 20px;
+      color: orange;
+    }
+
+    #CodingBanner .description p {
+      font-size: 17px;
+      color: CornflowerBlue;
+    }
+
+    .facilities_section h2 {
+      padding-top: 47px;
+      padding-bottom: 20px;
+      color: purple;
+    }
+
+    .facilities_section .wrapper {
+      padding: 15px;
+      /* border: 2px solid red; */
+    }
+
+    .facilities_section .card:hover {
+      transform: scale(1.15);
+      transition-duration: 1s;
+    }
+
+    .courses_public_section h3 {
+      background-color: orange;
+      color: white;
+      margin-top: 20px;
+    }
+
+    .courses_public_section .card {
+      margin: 10px;
+    }
+
+    /* .learn_section img{
+        height: 200px;
+        width: 300px;
+      } */
+  </style>
+  <nav class="navbar navbar-expand-lg bg-info fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Clever Coder</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Tech Support</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Courses Offered
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="#">1st Grade</a></li>
+                <li><a class="dropdown-item" href="#">2nd Grade</a></li>
+                <li><a class="dropdown-item" href="#">3rd Grade</a></li>
+                <li><a class="dropdown-item" href="#">4th Grade</a></li>
+                <li><a class="dropdown-item" href="#">5th Grade</a></li>
+                <li><a class="dropdown-item" href="#">6th Grade</a></li>
+                <li><a class="dropdown-item" href="#">7th Grade</a></li>
+                <li><a class="dropdown-item" href="#">8th Grade</a></li>
+                <li><a class="dropdown-item" href="#">9th Grade</a></li>
+                <li><a class="dropdown-item" href="#">10th Grade</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button class="btn btn-outline-success" type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <h3 style="text-align: center;padding-top: 89px;padding-bottom: 26px;color: purple;">Why Coding is important for kids
+  </h3>
+  <div class="container">
+    <div id="CodingBanner" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#CodingBanner" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#CodingBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#CodingBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="content_holder row">
+            <div class="description col">
+              <h3>Coding helps children with Math skills.</h3>
+              <p>Coding helps children to be able to visualize abstract concepts, lets them apply math to real-world
+                situations, and makes math fun and creative. </p>
+            </div>
+            <img class="col" src="./images/math.jpg" class="d-block w-50" alt="math">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="content_holder row">
+            <div class="description col">
+              <h3>Coding helps children become confident problem solvers.</h3>
+              <p>As they learn to code and give direction they learn that there is no one way to do something and that
+                even if their way didn't work. They can improve upon what they have already done without worrying about
+                failing.</p>
+            </div>
+            <img class="col" src="./images/ps.jpg" class="d-block w-50" alt="ps">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="content_holder row">
+            <div class="description col">
+              <h3>Coding improves writing academic performance.</h3>
+              <p>Children who learn to code understand how to plan and organize thoughts. This can lead to better
+                writing skills that can be built upon as coding skills develop over time.</p>
+            </div>
+            <img class="col" src="./images/academic.jpg" class="d-block w-50" alt="academic">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#CodingBanner" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#CodingBanner" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="facilities_section">
+    <div class="container">
+      <h2 class="text-center">Facilities at Clever Coder </h2>
+      <div class="row">
+        <div class="wrapper col-4 g-1">
+          <div class="card">
+            <img src="./images2/img1.png" class="card-img-top" alt="img1">
+            <div class="card-body">
+              <h5 class="card-title">Live interactive video</h5>
+              <p class="card-text">Live classes online will enable interactive access with training classes. Quick
+                clarifications will enable our students to learn at greater extent.</p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper col-4 g-1">
+          <div class="card">
+            <img src="./images2/img2.png" class="card-img-top" alt="img1">
+            <div class="card-body">
+              <h5 class="card-title">Documents and Exercises</h5>
+              <p class="card-text">Documents will be available online in the downloadable format of pdf, word,
+                presentations,etc.Which will enable students go back to tutorials whatever they learned.
+                Practice exercises and online quizzes with unlimited attempts will enable students to practice
+                interactively.</p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper col-4 g-1">
+          <div class="card">
+            <img src="./images2/img3.png" class="card-img-top" alt="img1">
+            <div class="card-body">
+              <h5 class="card-title">Performance self analysis</h5>
+              <p class="card-text">Whatever online quizzes and exercises they practice. They can track their results
+                later and they can analyze themselves the progress in each topic seperately with readily provided
+                results with analysis graphs. </p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper col-4 g-1">
+          <div class="card">
+            <img src="./images2/img4.png" class="card-img-top" alt="img1">
+            <div class="card-body">
+              <h5 class="card-title">Questions and Answers</h5>
+              <p class="card-text">We have question and answer section, Where students can post their doubts and they
+                will get answers.This section will enable students to post their doubts even without presence of
+                trainers and will get quick answers to their doubts. Which will also help other students who are working
+                on the same topic. </p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper col-12 g-1">
+          <div class="card">
+            <img src="./images2/img5.png" class="card-img-top" alt="img1">
+            <div class="card-body">
+              <h5 class="card-title">Online Compilers</h5>
+              <p class="card-text">We have readily configured end to end online compilers for development. Which will
+                also enable for quick access to their practical experiments. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="courses_public_section">
+    <div class="container">
+      <h3 class="text-center">Elementary School Courses</h3>
+      <div class="row">
+        <div class="wrapper col-4 g-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Course A</h5>
+              <p class="card-text">Grade level: Kindergarten</p>
+              <p class="card-text">Number of lessons: 13</p>
+              <p class="cart-text">
+                Students will learn to program using commands like loops and events. The lessons featured in this course
+                also teach students to meaningfully collaborate with others, investigate different problem-solving
+                techniques, persist in the face of challenging tasks, and learn about internet safety.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper col-4 g-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Course B</h5>
+              <p class="card-text">Grade level: 1st</p>
+              <p class="card-text">Number of lessons: 13</p>
+              <p class="cart-text">
+                Students learn more sophisticated unplugged activities and work through a greater variety of puzzles.
+                Students will learn the basics of programming, collaboration techniques, investigation and critical
+                thinking skills, persistence in the face of difficulty, and internet safety.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper col-4 g-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Course C</h5>
+              <p class="card-text">Grade level: 2nd</p>
+              <p class="card-text">Number of lessons: 16</p>
+              <p class="cart-text">
+                Students will create programs with sequencing, loops, and events. They will investigate problem-solving
+                techniques and develop strategies for building positive communities both online and offline. By the end
+                of the course, students will create interactive games that they can share.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper col-4 g-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Course D</h5>
+              <p class="card-text">Grade level: 3rd</p>
+              <p class="card-text">Number of lessons: 17</p>
+              <p class="cart-text">
+                The course begins with a review of the concepts found in earlier courses, including loops and events.
+                Afterward, students will develop their understanding of algorithms, nested loops, while loops,
+                conditionals, and more.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper col-4 g-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Course E</h5>
+              <p class="card-text">Grade level: 4th</p>
+              <p class="card-text">Number of lessons: 18</p>
+              <p class="cart-text">
+                Students will learn to make fun, interactive projects that reinforce what they’ll learn about online
+                safety. Following these lessons, students will engage in more complex coding. Students will learn about
+                nested loops, functions, and conditionals.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper col-4 g-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Course F</h5>
+              <p class="card-text">Grade level: 5th</p>
+              <p class="card-text">Number of lessons: 20</p>
+              <p class="cart-text">
+                The course begins by looking at how users make choices in the apps they use. Students then learn to make
+                a variety of Sprite Lab apps that also offer choices for the user. In the later lessons in the course,
+                students will learn more advanced concepts, including variables and “for” loops.
+              </p>
+            </div>
+          </div>
+        </div>
+        <h3 class="text-center">Middle & High School Courses</h3>
+        <div class="wrapper col-4 g-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Learn the fundamentals with our self-paced courses </h5>
+              <p class="card-text">Grade level: 6-12th</p>
+              <p class="card-text">Number of lessons: 20</p>
+              <p class="cart-text">
+                A great option for students getting started on their own. You'll learn the fundamentals of computer
+                science with drag & drop blocks. Create your own drawings and games. Note: Express courses are currently
+                only available in English, Hindi, Italian, and Spanish.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper col-4 g-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Introduction to Game Lab </h5>
+              <p class="card-text">Grade level: 6-12th</p>
+              <p class="card-text">Number of lessons: 20</p>
+              <p class="cart-text">
+                Program animations, interactive art, and games in Game Lab. Start off with simple shapes and build up to
+                more sophisticated sprite-based animations and games, using the same programming concepts and the design
+                process computer scientists use daily. In the final project, you’ll develop a personalized, interactive
+                program.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper col-4 g-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Turtle Programming in App Lab </h5>
+              <p class="card-text">Grade level: 6-12th</p>
+              <p class="card-text">Number of lessons: 20</p>
+              <p class="cart-text">
+                Begin working in App Lab where you’ll use simple JavaScript commands to draw shapes and images using a
+                virtual “turtle.” Learn to break down big programming problems into manageable pieces. Design and
+                program your own digital scene!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper col-4 g-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Event-Driven Programming in App Lab </h5>
+              <p class="card-text">Grade level: 6-12th</p>
+              <p class="card-text">Number of lessons: 20</p>
+              <p class="cart-text">
+                Program in the JavaScript language using App Lab. Learn to design apps that respond to user interaction
+                like clicks and key presses. Create a series of simple applications (apps) that live on the web!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="height: 2px;width: 100%;background-color: black;"></div>
+    </div>
+  </div>
+
+  <div class="learn_section container d-flex align-items-center">
+    <div class="row">
+
+      <div class="col col-xxl-6 col-xl-6 col-lg-6 col-md-11 col-sm-11 col-11 d-flex align-items-center">
+        <div>
+          <h3 style="color: orange;" class="d-flex align-items-center">Learn on the go</h3><br>
+          <h5 class="d-flex align-items-center">Access the content ,files , quizzes and exercises any where any time
+            with our android and ios apps on your mobile and tablets.</h5><br><br>
+          <div class="d-flex align-items-center">
+            <a href="">
+              <img alt="clever coder"
+                src="./image3/img3_1.svg" style="border-radius: 13px; width: 195px; height: 48px;">
+            </a>
+            <a href="">
+              <img
+                src="./image3/img3_1.svg"
+                alt="clever coder" style="border-radius: 13px; width: 195px; height: 48px;">
+            </a>
+          </div>
+          <br><br><br><br>
+        </div>
+      </div>
+
+      <div class="col col-xxl-6 col-xl-6 col-lg-6 col-md-11 col-sm-11 col-11 d-flex align-items-center">
+        <img style="height: 25em; width: auto;padding-top: 2em;"
+          src="./image3/img3_1.png" alt="Clever Coder">
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: #20b6ec;color: black; height: 12em; padding-top: 3em;">
+    <div class="container">
+      <div class="row">
+        <div class="col col-xxl-6 col-xl-6 col-lg-6 col-md-11 col-sm-11 col-11">
+          <h5>Know About Us</h5>
+          <p class="grey-text text-lighten-4">You can contact us on our help line 040-xxxxxxxx or you can mail us on xxxxx@gmail.com</p>
+        </div>
+        <div class="col col-xxl-6 col-xl-6 col-lg-6 col-md-11 col-sm-11 col-11">
+          <h5>Important Links</h5>
+          <ul>
+            <li><a style="color: black;text-decoration: none;" class="grey-text text-lighten-3" href="#!">Careers</a></li>
+            <li><a style="color: black;text-decoration: none;" class="grey-text text-lighten-3" href="#!">About Clever Coder</a></li>
+            <li><a style="color: black;text-decoration: none;" class="grey-text text-lighten-3" href="#!">Investor Relationships</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div style="background-color: #0dcaf0; height: 3em;padding-top: 1em;">
+      <div class="container">
+      <div class="row align-middle">
+        <div style="color: black;" class="col col-xxl-6 col-xl-6 col-lg-6 col-md-11 col-sm-11 col-11">
+        © 2022 Clever Coder
+        </div>
+        <div class="col col-xxl-6 col-xl-6 col-lg-6 col-md-11 col-sm-11 col-11">
+        <a style="color: black; text-decoration: none;" href="#!">More Links</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
